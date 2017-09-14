@@ -36,6 +36,14 @@ test('should have a message property if string is passed on construction', () =>
   assert.ok(xError.message === testMessage);
 });
 
+test('should have no other property if string is passed on construction', () => {
+  const testMessage = 'testMessage';
+  const xErrorKeys = Object.keys(new XError(testMessage));
+  assert.equal(xErrorKeys.length, 2);
+  assert.ok(xErrorKeys.includes('name'));
+  assert.ok(xErrorKeys.includes('message'));
+});
+
 test('should have an empty string as default message', () => {
   assert.equal(new XError().message, '');
 });

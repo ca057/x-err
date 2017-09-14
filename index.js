@@ -6,8 +6,7 @@ function XError(props) {
 
   if (props && typeof props === 'string') {
     this.message = props;
-  }
-  if (props && Object.keys(props).length > 0) {
+  } else if (props && Object.keys(props).length > 0) {
     Object.keys(props).forEach(key => {
       Object.defineProperty(this, key, {
         // TODO Test
