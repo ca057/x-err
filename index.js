@@ -4,6 +4,9 @@ function XError(props) {
   this.name = 'XError';
   this.message = '';
 
+  if (props && typeof props === 'string') {
+    this.message = props;
+  }
   if (props && Object.keys(props).length > 0) {
     Object.keys(props).forEach(key => {
       Object.defineProperty(this, key, {
@@ -14,10 +17,6 @@ function XError(props) {
         value: props[key],
       });
     });
-  }
-
-  if (props && typeof props === 'string') {
-    this.message = props;
   }
 
   if (Error.hasOwnProperty('captureStackTrace')) {
