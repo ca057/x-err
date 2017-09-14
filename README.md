@@ -1,5 +1,6 @@
 # xerror
-Simple JavaScript wrapper for a dynamic Error.
+
+> Simple JavaScript module to create an Error with custom properties.
 
 
 ## Usage
@@ -15,3 +16,13 @@ try {
   console.log(error.baz); // 42
 }
 ```
+
+
+## Test
+
+Run `npm run test`.
+
+
+## License
+
+GNU GENERAL PUBLIC LICENSE, see [LICENSE](LICENSE).
