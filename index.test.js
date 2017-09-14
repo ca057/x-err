@@ -88,6 +88,8 @@ const result = `--> ${passed +
   failed} tests completed (${passed} passed, ${failed} failed)`;
 if (failed > 0) {
   console.log('\x1b[41m\x1b[37m%s\x1b[0m', 'FAILED', result);
+  process.exit(1);
 } else if (passed > 0 && failed === 0) {
   console.log('\x1b[42m%s\x1b[0m', 'PASSED', result);
+  process.exit(0);
 }
