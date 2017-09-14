@@ -9,7 +9,6 @@ function XError(props) {
   } else if (props && Object.keys(props).length > 0) {
     Object.keys(props).forEach(key => {
       Object.defineProperty(this, key, {
-        // TODO Test
         enumerable: true,
         // TODO test
         writable: false,
