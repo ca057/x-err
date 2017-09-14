@@ -54,7 +54,6 @@ test('should return the correct error stack', () => {
   }
   const errorMessage = 'errorStack';
   const errorStack = testFunction(errorMessage).split('\n');
-  console.log(errorStack);
   // should report an error with the provided message
   assert.ok(errorStack[0].includes(errorMessage));
   // error was thrown in testFunction()
