@@ -76,6 +76,8 @@ test('should have all key/value-pairs of a passed object as property with the re
     bar: 'bar',
   };
   const xError = new XError(testObject);
+  // message and name + the ones passed on construction
+  assert.ok(Object.keys(xError).length === 2 + Object.keys(testObject).length);
   assert.equal(xError.foo, testObject.foo);
   assert.equal(xError.bar, testObject.bar);
 });
