@@ -14,7 +14,7 @@
   "scripts": {
     "format": "prettier --single-quote --trailing-comma es5 --write index.js",
     "test": "node index.test.js --harmony",
-    "prepublish": "npm run format && npm run test"
+    "prepublishOnly": "npm run format && npm run test"
   },
   "devDependencies": {
     "prettier": "^1.7.0"
