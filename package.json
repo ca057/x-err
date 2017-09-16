@@ -11,6 +11,10 @@
   "keywords": ["javascript", "error-handling", "error"],
   "main": "index.js",
   "scripts": {
+    "format": "prettier --single-quote --trailing-comma es5 --write",
     "test": "node index.test.js --harmony"
+  },
+  "devDependencies": {
+    "prettier": "^1.7.0"
   }
 }
