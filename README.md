@@ -1,4 +1,4 @@
-# xerror
+# x-err
 
 > Simple JavaScript module to create an Error with custom properties.
 

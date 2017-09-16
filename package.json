@@ -1,11 +1,11 @@
 {
-  "name": "xerror",
+  "name": "x-err",
   "version": "0.0.1",
   "author": {
     "name": "Christian Ost"
   },
   "main": "index.js",
   "scripts": {
-    "test": "node index.test.js --harmony_trailing_commas"
+    "test": "node index.test.js --harmony"
   }
 }
