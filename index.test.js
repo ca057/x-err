@@ -30,6 +30,11 @@ test('(instanceof) error object should be instanceof XError', () => {
   assert.ok(xError instanceof XError);
 });
 
+test('(instanceof) error object should be instanceof Error', () => {
+  const xError = new XError();
+  assert.ok(xError instanceof Error);
+});
+
 test('should have a message property if string is passed on construction', () => {
   const testMessage = 'testMessage';
   const xError = new XError(testMessage);
