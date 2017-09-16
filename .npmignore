@@ -1,0 +1,2 @@
+# don't include tests in published version, as there is no need for them
+index.test.js
