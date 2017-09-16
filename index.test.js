@@ -87,6 +87,16 @@ test('should have all key/value-pairs of a passed object as property with the re
   assert.equal(xError.bar, testObject.bar);
 });
 
+test('should not be able to overwrite a custom property', () => {
+  const testObject = {
+    foo: 'foo',
+    bar: 'bar',
+  };
+  const xError = new XError(testObject);
+  xError.foo = 'bar';
+  assert.equal(xError.foo, testObject.foo);
+});
+
 printEmptyLine();
 
 const result = `--> ${passed +

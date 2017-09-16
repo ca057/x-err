@@ -8,7 +8,6 @@ function XError(props) {
     Object.keys(props).forEach(key => {
       Object.defineProperty(this, key, {
         enumerable: true,
-        // TODO test
         writable: false,
         value: props[key],
       });
