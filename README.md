@@ -42,6 +42,13 @@ try {
 Run `npm run test`.
 
 
+## Resources
+
+Based partly on:
+
+- [What's a good way to extend Error in JavaScript?](https://stackoverflow.com/questions/1382107/whats-a-good-way-to-extend-error-in-javascript)
+- [Error](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Error)
+
 ## License
 
 GNU GENERAL PUBLIC LICENSE, see [LICENSE](LICENSE).
