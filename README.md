@@ -2,6 +2,9 @@
 
 > Simple JavaScript module to create an Error with custom properties.
 
+[![npm](https://img.shields.io/npm/v/x-err.svg)](https://www.npmjs.com/package/x-err)
+[![npm](https://img.shields.io/npm/l/x-err.svg)](https://www.npmjs.com/package/x-err)
+
 
 ## Installation
 

@@ -2,13 +2,14 @@
   "name": "x-err",
   "description":
     "Simple JavaScript module to create an Error with custom properties.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Christian Ost",
     "email": "hallo@christianost.de",
     "url": "christianost.de"
   },
   "keywords": ["javascript", "error-handling", "error"],
+  "license": "GPL-3.0",
   "main": "index.js",
   "scripts": {
     "format": "prettier --single-quote --trailing-comma es5 --write index.js",
