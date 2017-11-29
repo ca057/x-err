@@ -17,7 +17,6 @@ On construction, either provide an object, where all keys will be used as proper
 
 ```javascript
 const XError = require('x-err');
-const assert = require('assert');
 
 try {
   throw new XError({ message: 'My error message.', foo: 'bar', baz: 42 });
