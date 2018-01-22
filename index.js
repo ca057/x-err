@@ -5,8 +5,9 @@ function XError(props) {
   if (props && typeof props === 'string') {
     this.message = props;
   } else if (props && Object.keys(props).length > 0) {
-    Object.keys(props).forEach(key => {
-      Object.defineProperty(this, key, {
+    const self = this;
+    Object.keys(props).forEach(function assignCustomProps(key) {
+      Object.defineProperty(self, key, {
         enumerable: true,
         writable: false,
         value: props[key],
