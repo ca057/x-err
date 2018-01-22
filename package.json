@@ -17,6 +17,10 @@
     "index.js"
   ],
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ca057/x-err"
+  },
   "scripts": {
     "format": "prettier --single-quote --trailing-comma es5 --write index.js",
     "test": "node index.test.js --harmony",
