@@ -1,11 +1,11 @@
 {
   "name": "x-err",
   "description": "Simple JavaScript module to create an Error with custom properties.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "name": "Christian Ost",
     "email": "hallo@christianost.de",
-    "url": "christianost.de"
+    "url": "https://christianost.de"
   },
   "keywords": [
     "javascript",
@@ -13,7 +13,14 @@
     "error"
   ],
   "license": "GPL-3.0",
+  "files": [
+    "index.js"
+  ],
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ca057/x-err"
+  },
   "scripts": {
     "format": "prettier --single-quote --trailing-comma es5 --write index.js",
     "test": "node index.test.js --harmony",
