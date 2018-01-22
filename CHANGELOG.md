@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. The format 
 
 ## [1.1.0] - 2018-01-22
 
+### Added
+
+* Introduced changelog.
+
 ### Changed
 
 * Make module ES5 compatible.
